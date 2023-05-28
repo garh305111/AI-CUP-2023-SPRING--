@@ -11,7 +11,7 @@ AI CUP 2023 春季賽多模態病理嗓音分類競賽
 
 ### Installation
 
-Describe the installation process and dependencies required to run the project. Include code snippets if necessary.
+安裝所需的套件
 
 ```bash
 pip install pandas numpy librosa matplotlib scikit-learn xgboost catboost lightgbm
