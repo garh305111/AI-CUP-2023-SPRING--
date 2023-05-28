@@ -1,4 +1,4 @@
-# AI-CUP-2023-SPRING--
+# AI-CUP-2023-SPRING
 
 ## Project Title
 
