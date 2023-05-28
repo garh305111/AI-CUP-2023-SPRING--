@@ -48,8 +48,6 @@ python3 predict.py <audio_file_path> <table_path> <prediction_storage_path>
 輸出
 預測腳本 (predict.py) 的輸出將是存儲在指定的 <prediction_storage_path> 中的預測檔案。該文件將包含對輸入音檔的預測結果。
 
-在使用腳本時，請確保提供正確的輸入文件路徑和儲存路徑，以確保項目的正確功能。
-
 
 ### License
 
