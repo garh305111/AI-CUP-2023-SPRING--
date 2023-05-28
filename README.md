@@ -19,41 +19,36 @@ pip install pandas numpy librosa matplotlib scikit-learn xgboost catboost lightg
 
 ## Usage
 
-This project provides functionality for audio file analysis and prediction using machine learning models. Below are the instructions on how to use the project, including the available scripts and command-line options.
+本項目提供音檔分析和預測的功能，使用機器學習模型進行操作。以下是使用該項目的說明，包括可用的腳本和命令行選項。
 
-### Script: `model_building.py`
+Script：model_building.py
+此腳本用於基於音檔和特徵表構建和訓練機器學習模型。
 
-This script is used for building and training machine learning models based on audio files and a table of features.
+命令行使用方法：
 
-Command-line usage:
-```
+php
+Copy code
 python3 model_building.py <audio_file_path> <table_path> <model_storage_path>
-```
+<audio_file_path>：輸入音檔的文件路徑。
+<table_path>：特徵表的文件路徑。
+<model_storage_path>：訓練好的模型將存儲的目錄路徑。
+Script：predict.py
+此腳本用於使用訓練好的模型對新的音檔進行預測。
 
-- `<audio_file_path>`: The file path to the input audio file.
-- `<table_path>`: The file path to the table containing the audio features.
-- `<model_storage_path>`: The directory path where the trained model will be stored.
+命令行使用方法：
 
-### Script: `predict.py`
-
-This script is used for making predictions on new audio files using the trained models.
-
-Command-line usage:
-```
+php
+Copy code
 python3 predict.py <audio_file_path> <table_path> <prediction_storage_path>
-```
+<audio_file_path>：進行預測的輸入音檔的文件路徑。
+<table_path>：特徵表的文件路徑。
+<prediction_storage_path>：預測結果將存儲的目錄路徑。
+請注意，在使用預測腳本之前，需要確保訓練好的模型位於指定的 <prediction_storage_path> 中。
 
-- `<audio_file_path>`: The file path to the input audio file for prediction.
-- `<table_path>`: The file path to the table containing the audio features.
-- `<prediction_storage_path>`: The directory path where the prediction output file will be stored.
+輸出
+預測腳本 (predict.py) 的輸出將是存儲在指定的 <prediction_storage_path> 中的預測檔案。該文件將包含對輸入音檔的預測結果。
 
-Please note that you need to have the trained models available in the specified `<model_storage_path>` for the prediction script to work correctly.
-
-## Output
-
-The output of the prediction script (`predict.py`) will be a prediction file stored in the specified `<prediction_storage_path>`. This file will contain the predicted results for the input audio file.
-
-Make sure to provide the correct input file paths and storage paths when using the scripts to ensure the desired functionality of the project.
+在使用腳本時，請確保提供正確的輸入文件路徑和儲存路徑，以確保項目的正確功能。
 
 
 ### License
