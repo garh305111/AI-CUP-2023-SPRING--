@@ -2,16 +2,11 @@
 
 ## Project Title
 
-A brief description or overview of the project.
+AI CUP 2023 春季賽多模態病理嗓音分類競賽
 
 ### Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
-- [Data Preprocessing](#data-preprocessing)
-- [Model Training](#model-training)
-- [Evaluation](#evaluation)
-- [Conclusion](#conclusion)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -28,41 +23,9 @@ pip install pandas numpy librosa matplotlib scikit-learn xgboost catboost lightg
 Explain how to use the project, including any scripts or command-line options.
 
 ```python
-python main.py --input_file data.csv --output_file results.csv
+python3 model_building.py 
 ```
 
-### Features
-
-Describe the main features and functionality of the project.
-
-- Feature 1: 
-- Feature 2: 
-- Feature 3: 
-
-### Data Preprocessing
-
-Outline the steps taken to preprocess the data before training the models.
-
-- Step 1: Loading the dataset using `pandas`.
-- Step 2: Performing data cleaning and transformation.
-- Step 3: Extracting audio features using `librosa`.
-
-### Model Training
-
-Explain the process of training the machine learning models.
-
-- Step 1: Splitting the dataset into training and testing sets.
-- Step 2: Defining the ensemble of classifiers.
-- Step 3: Training each classifier on the training set.
-- Step 4: Combining the predictions of each classifier using soft voting.
-
-### Evaluation
-
-Describe the evaluation metrics used and provide the results of the trained models.
-
-- Metric 1: Accuracy
-- Metric 2: Recall
-- Metric 3: Precision
 
 ### Conclusion
 
@@ -74,4 +37,4 @@ Provide guidelines for contributing to the project, including instructions for s
 
 ### License
 
-Specify the project's license information.
+This project is licensed under the MIT License. See the LICENSE file for more information.
