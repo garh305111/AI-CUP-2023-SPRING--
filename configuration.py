@@ -1,3 +1,20 @@
+import pandas as pd
+import numpy as np
+import librosa
+import os
+import sys
+import re
+import pickle
+import matplotlib.pyplot as plt
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
+from xgboost import XGBClassifier
+from catboost import CatBoostClassifier
+from lightgbm import LGBMClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import recall_score
+from collections import Counter
+from sklearn.base import BaseEstimator, ClassifierMixin
+
 class SoftVoter(BaseEstimator, ClassifierMixin):
     def __init__(self, classifiers):
         self.classifiers = classifiers
