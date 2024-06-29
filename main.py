@@ -16,9 +16,6 @@ from collections import Counter
 from sklearn.base import BaseEstimator, ClassifierMixin
 from configuration import *
 
-
-isnan_columns = lambda df, column: True if df[column].map(lambda x: np.isnan(x)).value_counts()[False] != len(df[column]) else False
-
 if "__name__" == "main":
     
     if len(sys.argv) != 7:
