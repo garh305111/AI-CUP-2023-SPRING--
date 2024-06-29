@@ -35,12 +35,12 @@ python3 script.py \
   <test_table_path> \
   <prediction_storage_path>
 ```
-<audio_file_path>：輸入音檔的文件路徑。
-<table_path>：特徵表的文件路徑。
-<model_storage_path>：訓練好的模型將存儲的目錄路徑。
-<audio_file_path>：進行預測的輸入音檔的文件路徑。
-<table_path>：特徵表的文件路徑。
-<prediction_storage_path>：預測結果將存儲的目錄路徑。
+<audio_file_path>：輸入音檔的文件路徑。 \
+<table_path>：特徵表的文件路徑。 \
+<model_storage_path>：訓練好的模型將存儲的目錄路徑。 \
+<audio_file_path>：進行預測的輸入音檔的文件路徑。 \
+<table_path>：特徵表的文件路徑。 \
+<prediction_storage_path>：預測結果將存儲的目錄路徑。 \
 請注意，在使用預測腳本之前，需要確保訓練好的模型位於指定的 <prediction_storage_path> 中。
 
 輸出
