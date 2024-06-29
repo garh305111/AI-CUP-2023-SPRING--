@@ -37,7 +37,11 @@ class SoftVoter(BaseEstimator, ClassifierMixin):
         return np.array(final_predictions)
 
 def weight_calc(df):
-    return df["Disease category"].value_counts().map(lambda x: 1/(x/len(df["Disease category"]))).to_dict()
+    return df["Disease category"].value_counts().map(\
+        lambda x: 1/(x/len(df["Disease category"]))).to_dict()
+
+def has_nan(df, column):
+    return df[column].isnull().any()
 
 def custom_cross_val_score(model, X, y, cv=5):
     scores = []
