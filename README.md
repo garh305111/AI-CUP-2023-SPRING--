@@ -27,7 +27,13 @@ Script：script.py
 命令行使用方法：
 
 ```python3
-python3 script.py <train_audio_file_path> <train_table_path> <model_storage_path> <test_audio_file_path> <test_table_path> <prediction_storage_path>
+python3 script.py \
+  <train_audio_file_path> \
+  <train_table_path> \
+  <model_storage_path> \
+  <test_audio_file_path> \
+  <test_table_path> \
+  <prediction_storage_path>
 ```
 <audio_file_path>：輸入音檔的文件路徑。
 <table_path>：特徵表的文件路徑。
