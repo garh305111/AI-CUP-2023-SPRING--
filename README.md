@@ -9,7 +9,7 @@ AI CUP 2023 春季賽多模態病理嗓音分類競賽
 - [Usage](#usage)
 - [License](#license)
 
-### Installation
+## Installation
 
 安裝所需的套件
 
